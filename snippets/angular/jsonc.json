@@ -1,6 +1,6 @@
 {
   "Create launch config for Chrome": {
-    "prefix": "a-launch-chrome",
+    "prefix": "ng-launch-chrome",
     "body": [
       "{",
       "\t\"name\": \"Launch Angular\",",
@@ -13,7 +13,7 @@
     ]
   },
   "Create launch config for Edge": {
-    "prefix": "a-launch-edge",
+    "prefix": "ng-launch-edge",
     "body": [
       "{",
       "\t\"name\": \"Launch Angular\",",
@@ -27,7 +27,7 @@
     ]
   },
   "Create task to start Angular": {
-    "prefix": "a-task-start",
+    "prefix": "ng-task-start",
     "body": [
       "{",
       "\t\"type\": \"npm\",",

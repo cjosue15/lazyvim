@@ -1,6 +1,6 @@
 {
   "Angular Component": {
-    "prefix": "a-component",
+    "prefix": "ng-component",
     "description": "Angular component",
     "body": [
       "import { Component, OnInit } from '@angular/core';",
@@ -18,7 +18,7 @@
     ]
   },
   "Angular Component with Inline Template": {
-    "prefix": "a-component-inline",
+    "prefix": "ng-component-inline",
     "description": "Angular component with an inline template",
     "body": [
       "import { Component, OnInit } from '@angular/core';",
@@ -36,7 +36,7 @@
     ]
   },
   "Angular Pipe": {
-    "prefix": "a-pipe",
+    "prefix": "ng-pipe",
     "description": "Angular pipe",
     "body": [
       "import { Pipe, PipeTransform } from '@angular/core';",
@@ -53,7 +53,7 @@
     ]
   },
   "Angular Service": {
-    "prefix": "a-service",
+    "prefix": "ng-service",
     "description": "Angular Service with Injectable ProvidedIn Root",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -66,12 +66,12 @@
     ]
   },
   "Angular Default Route Path": {
-    "prefix": "a-route-path-default",
+    "prefix": "ng-route-path-default",
     "description": "Angular default route path",
     "body": ["{ path: '', pathMatch: 'full', redirectTo: '${1:path}' },$0"]
   },
   "Angular Route Path with Children": {
-    "prefix": "a-route-path-with-children",
+    "prefix": "ng-route-path-with-children",
     "description": "Angular route path with children",
     "body": [
       "{",
@@ -84,17 +84,17 @@
     ]
   },
   "Angular 404 Route Path": {
-    "prefix": "a-route-path-404",
+    "prefix": "ng-route-path-404",
     "description": "Angular 404 route path",
     "body": ["{ path: '**', component: ${1:PathNotFoundComponent} },$0"]
   },
   "Angular Eager Route Path": {
-    "prefix": "a-route-path-eager",
+    "prefix": "ng-route-path-eager",
     "description": "Angular eager route path",
     "body": ["{ path: '${1:path}', component: ${2:Name}Component },$0"]
   },
   "Angular Lazy Route Path": {
-    "prefix": "a-route-path-lazy",
+    "prefix": "ng-route-path-lazy",
     "description": "Angular lazy route path",
     "body": [
       "{",
@@ -104,7 +104,7 @@
     ]
   },
   "Routing Params - Subscribe": {
-    "prefix": "a-route-params-subscribe",
+    "prefix": "ng-route-params-subscribe",
     "description": "Angular - subscribe to routing parameters",
     "body": [
       "this.route.paramMap",
@@ -114,12 +114,12 @@
     ]
   },
   "HttpClient.get": {
-    "prefix": "a-httpclient-get",
+    "prefix": "ng-httpclient-get",
     "description": "Angular HttpClient.get",
     "body": ["return this.httpClient.get('${1:url}');$0"]
   },
   "Angular HttpClient Service": {
-    "prefix": "a-service-httpclient",
+    "prefix": "ng-service-httpclient",
     "description": "Angular service with HttpClient",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -133,7 +133,7 @@
     ]
   },
   "Angular HttpInterceptor for Logging": {
-    "prefix": "a-http-interceptor-logging",
+    "prefix": "ng-http-interceptor-logging",
     "description": "Angular HttpInterceptor for Logging HttpClient",
     "body": [
       "import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';",
@@ -159,7 +159,7 @@
     ]
   },
   "Angular HttpInterceptor for Headers": {
-    "prefix": "a-http-interceptor-headers",
+    "prefix": "ng-http-interceptor-headers",
     "description": "Angular HttpInterceptor for headers HttpClient",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -180,7 +180,7 @@
     ]
   },
   "Angular HttpInterceptor - Empty": {
-    "prefix": "a-http-interceptor",
+    "prefix": "ng-http-interceptor",
     "description": "Empty Angular HttpInterceptor for HttpClient",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -196,17 +196,17 @@
     ]
   },
   "Output Event": {
-    "prefix": "a-output-event",
+    "prefix": "ng-output-event",
     "body": ["@Output() ${1:eventName} = new EventEmitter<${2:eventType}>();"],
     "description": "Angular @Output event and emitter"
   },
   "Subscribe": {
-    "prefix": "a-subscribe",
+    "prefix": "ng-subscribe",
     "description": "Angular observable subscribe",
     "body": ["this.${1:service}.${2:function}", "\t.subscribe(${3:arg} => this.${4:property} = ${3:arg});", "$0"]
   },
   "Angular Root Component": {
-    "prefix": "a-component-root",
+    "prefix": "ng-component-root",
     "description": "Angular App root component",
     "body": [
       "import { Component } from '@angular/core';",
@@ -222,7 +222,7 @@
     ]
   },
   "Angular Root Module": {
-    "prefix": "a-module-root",
+    "prefix": "ng-module-root",
     "description": "Angular Root Module",
     "body": [
       "import { NgModule } from '@angular/core';",
@@ -244,7 +244,7 @@
     ]
   },
   "Route definitions": {
-    "prefix": "a-routes",
+    "prefix": "ng-routes",
     "description": "Route definitions",
     "body": [
       "import { Routes } from '@angular/router';",
@@ -253,7 +253,7 @@
     ]
   },
   "Angular Module": {
-    "prefix": "a-module",
+    "prefix": "ng-module",
     "description": "Angular Module",
     "body": [
       "import { NgModule } from '@angular/core';",
@@ -271,7 +271,7 @@
     ]
   },
   "Angular Directive": {
-    "prefix": "a-directive",
+    "prefix": "ng-directive",
     "description": "Angular directive",
     "body": [
       "import { Directive } from '@angular/core';",
@@ -283,7 +283,7 @@
     ]
   },
   "Angular CanActivate Guard": {
-    "prefix": "a-guard-can-activate",
+    "prefix": "ng-guard-can-activate",
     "description": "Angular CanActivate guard",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -300,7 +300,7 @@
     ]
   },
   "Angular CanActivateChild Guard": {
-    "prefix": "a-guard-can-activate-child",
+    "prefix": "ng-guard-can-activate-child",
     "description": "Angular CanActivateChild guard",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -317,7 +317,7 @@
     ]
   },
   "Angular CanLoad Guard": {
-    "prefix": "a-guard-can-load",
+    "prefix": "ng-guard-can-load",
     "description": "Angular CanLoad guard",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -334,7 +334,7 @@
     ]
   },
   "Angular CanDeactivate Guard": {
-    "prefix": "a-guard-can-deactivate",
+    "prefix": "ng-guard-can-deactivate",
     "description": "Angular CanDeactivate guard",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -365,7 +365,7 @@
     ]
   },
   "Angular Opt-In Preload Strategy": {
-    "prefix": "a-preload-opt-in-strategy",
+    "prefix": "ng-preload-opt-in-strategy",
     "description": "Angular opt-in preload strategy",
     "body": [
       "import { PreloadingStrategy, Route } from '@angular/router';",
@@ -380,7 +380,7 @@
     ]
   },
   "Angular Network-Aware Preload Strategy": {
-  "prefix": "a-preload-network-strategy",
+  "prefix": "ng-preload-network-strategy",
     "description": "Angular network aware preload strategy",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -414,7 +414,7 @@
     ]
   },
   "Angular Router Events": {
-    "prefix": "a-router-events",
+    "prefix": "ng-router-events",
     "description": "Angular Router Events",
     "body": [
       "checkEvents() {",
@@ -432,7 +432,7 @@
     ]
   },
   "Angular Module SkipSelf Constructor": {
-    "prefix": "a-ctor-skip-self",
+    "prefix": "ng-ctor-skip-self",
     "description": "Angular Module SkipSelf constructor",
     "body": [
       "constructor( @Optional() @SkipSelf() parentModule: ${1:ModuleName} {",
@@ -445,17 +445,17 @@
     ]
   },
   "RxJs Import": {
-    "prefix": "a-rxjs-import",
+    "prefix": "ng-rxjs-import",
     "description": "RxJs import",
     "body": ["import { ${1:Observable} } from 'rxjs';", "$0"]
   },
   "RxJs Operator Import": {
-    "prefix": "a-rxjs-operator-import",
+    "prefix": "ng-rxjs-operator-import",
     "description": "RxJs import",
     "body": ["import { ${1:map} } from 'rxjs/operators';", "$0"]
   },
   "Angular Resolver": {
-    "prefix": "a-resolver",
+    "prefix": "ng-resolver",
     "description": "Angular Resolver",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -471,7 +471,7 @@
     ]
   },
   "NgRx Store Module": {
-    "prefix": "a-ngrx-store-module",
+    "prefix": "ng-ngrx-store-module",
     "description": "NgRx Store Module",
     "body": [
       "import { NgModule } from '@angular/core';",
@@ -491,17 +491,17 @@
     ]
   },
   "NgRx Create Action": {
-    "prefix": "a-ngrx-create-action",
+    "prefix": "ng-ngrx-create-action",
     "description": "Creates an NgRx Action",
     "body": ["export const ${1:action} = createAction('[${2:Source}] ${3:Event}');"]
   },
   "NgRx Create Action w/ Props": {
-    "prefix": "a-ngrx-create-action-props",
+    "prefix": "ng-ngrx-create-action-props",
     "description": "Creates an NgRx Action with Props",
     "body": ["export const ${1:action} = createAction('[${2:Source}] ${3:Event}', props<{${4:key}: ${5:type}}>());"]
   },
   "NgRx Create Reducer": {
-    "prefix": "a-ngrx-create-reducer",
+    "prefix": "ng-ngrx-create-reducer",
     "description": "Creates an NgRx Reducer",
     "body": [
       "const ${1:feature}Reducer = createReducer(",
@@ -515,7 +515,7 @@
     ]
   },
   "NgRx Create Effect": {
-    "prefix": "a-ngrx-create-effect",
+    "prefix": "ng-ngrx-create-effect",
     "description": "Creates an NgRx Effect",
     "body": [
       "${1:effectName}$ = createEffect(() => {",
@@ -527,7 +527,7 @@
     ]
   },
   "NgRx Create Effect for API Call": {
-    "prefix": "a-ngrx-create-effect-api",
+    "prefix": "ng-ngrx-create-effect-api",
     "description": "Creates an NgRx Effect Scaffolded for API Call",
     "body": [
       "${1:effectName}$ = createEffect(() => {",
@@ -543,7 +543,7 @@
     ]
   },
   "NgRx Create Selector": {
-    "prefix": "a-ngrx-create-selector",
+    "prefix": "ng-ngrx-create-selector",
     "description": "Creates an NgRx Selector",
     "body": [
       "export const select${1:Feature}${2:Property} = createSelector(",
@@ -553,7 +553,7 @@
     ]
   },
   "NgRx Create Selector w/ Props": {
-    "prefix": "a-ngrx-create-selector-props",
+    "prefix": "ng-ngrx-create-selector-props",
     "description": "Creates an NgRx Selector using props",
     "body": [
       "export const select${1:Feature}${2:Property} = createSelector(",
@@ -563,12 +563,12 @@
     ]
   },
   "NgRx Data Import Entity Data Module": {
-    "prefix": "a-ngrx-data-entity-data-module-import",
+    "prefix": "ng-ngrx-data-entity-data-module-import",
     "description": "Import NgRx Entity Data Module",
     "body": ["EntityDataModule.forRoot(${1:entityConfig}),"]
   },
   "NgRx Data Entity Metadata": {
-    "prefix": "a-ngrx-data-entity-metadata",
+    "prefix": "ng-ngrx-data-entity-metadata",
     "description": "NgRx Data Entity Metadata",
     "body": [
       "import { EntityMetadataMap } from '@ngrx/data';",
@@ -583,7 +583,7 @@
     ]
   },
   "NgRx Data Entity Collection Data Service": {
-    "prefix": "a-ngrx-data-entity-collection-data-service",
+    "prefix": "ng-ngrx-data-entity-collection-data-service",
     "description": "NgRx Data Entity Collection Data Service",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -602,7 +602,7 @@
     ]
   },
   "TrackBy Function": {
-    "prefix": "a-trackby",
+    "prefix": "ng-trackby",
     "description": "TrackBy Function",
     "body": ["${1:trackBy}(index: number, ${2:name}: ${3:model}): ${4:number} {", "  return ${2:name}${5:.id};$0", "}"]
   }
