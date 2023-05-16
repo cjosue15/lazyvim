@@ -3,4 +3,9 @@ return {
   dependencies = {
     { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
   },
+  opts = {
+    autotag = {
+      enable = true,
+    },
+  },
 }
