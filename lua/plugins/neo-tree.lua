@@ -4,7 +4,7 @@ return {
     cmd = "Neotree",
     opts = {
       window = {
-        position = "right",
+        position = "left",
       },
     },
   },
